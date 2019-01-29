@@ -6,10 +6,14 @@ export const environment = {
   production: false,
   config: {
     tenant: 'careportfol.io',
-    clientId: '14c39115-7cae-4c02-b865-20d7b2d205f8',
+    clientId: 'fa765f60-4357-4ed3-8369-307e8247f5fe',
     endpoints: {
       'https://graph.microsoft.com': '00000003-0000-0000-c000-000000000000'
-    }
+    },
+    cacheLocation: 'localStorage',  // enable this for IE, as sessionStorage does not work for localhost.
+    popUp: true,
+    redirectUri: "http://localhost:4200/"
+
   }
 };
 
